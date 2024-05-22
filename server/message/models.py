@@ -7,4 +7,5 @@ class Message(models.Model):
     phone = models.CharField(max_length=100)
     message = models.TextField()
     def __str__(self):
-        return self.name + ' ' + self.email
+        return self.name
+    

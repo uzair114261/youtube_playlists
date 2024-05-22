@@ -1,6 +1,6 @@
 from django.urls import path
-from . import views
+from message import views
 
 urlpatterns = [
-    path('send-message/', views.MessageView.as_view(), name='send-message')
+    path('new_messages', views.NewMessage.as_view(), name='new_message' )
 ]

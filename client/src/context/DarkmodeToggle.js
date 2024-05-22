@@ -23,7 +23,7 @@ const DarkModeToggle = () => {
                   darkMode ? (
                     <button className='p-1 text-[12px] md:p-2 bg-gray-700 text-white border-[1px] border-solid rounded text-sm'>Light Mode</button>
                   ) : (
-                    <button className='p-1 text-[12px] md:p-2 bg-teal-100 rounded text-sm'>Dark Mode</button>
+                    <button className='p-1 text-[12px] md:p-2 bg-sky-400 text-white rounded text-sm'>Dark Mode</button>
                   )
                 }
             </button>
