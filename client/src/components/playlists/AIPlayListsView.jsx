@@ -25,6 +25,7 @@ const AIPlaylistView = () => {
       };
     return (
         <div className='p-2 dark:bg-gray-800'>
+      
             <YouTube opts={opts} />
             <div className='py-2 px-2 dark:text-white'>
                 <h2 className='text-xl font-bold'>{playlistData?.title}</h2>

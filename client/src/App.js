@@ -17,12 +17,14 @@ import OrganicPlaylists from './components/playlists/OrganicPlaylists';
 import Test from './components/Test';
 import OrganicPlaylistView from './components/playlists/OrganicPlaylistView';
 import AIPlaylistView from './components/playlists/AIPlayListsView';
+import Chatbot from './components/chatbot/Chatbot';
 
 function App() {
   return (
     <div className="ease-in duration-200">
       <ToastProvider>
         <Router>
+          <Chatbot />
           <Navbar />
           <Routes>
             <Route element={<Home />} path='' />
