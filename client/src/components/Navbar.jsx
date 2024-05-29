@@ -15,7 +15,7 @@ const Navbar = () => {
                 <div className="container mx-auto">
                     <div className="flex items-center justify-between">
                         <div className="logo">
-                            <h1 className="text-2xl dark:text-white">M.ALi Farhat</h1>
+                            <h1 className="text-2xl dark:text-white">Final Year Project</h1>
                         </div>
                         <div className="menu hidden md:block">
                             <ul className="flex gap-4 dark:text-white">
@@ -34,16 +34,12 @@ const Navbar = () => {
                                     <Link to="about">About</Link>
                                 </li>
                                 <li>
-                                    <Link to="contact">Contact</Link>
+                                    <Link to="contact">Contact Us</Link>
                                 </li>
                             </ul>
                         </div>
                         <div className="flex items-center gap-2">
-                            <input
-                                type="text"
-                                placeholder="search"
-                                className="p-2 border-[1px] border-solid rounded text-sm outline-blue-500 hidden md:block dark:outline-none dark:bg-gray-800 dark:border-none dark:text-white "
-                            />
+                            
                             <div>
                                 <DarkModeToggle />
                             </div>
@@ -82,7 +78,7 @@ const Navbar = () => {
                                 <Link to="about">About</Link>
                             </li>
                             <li className="py-2 my-2 bg-teal-200 dark:bg-white dark:text-black rounded text-center text-white cursor-pointer">
-                                <Link to="contact">Contact</Link>
+                                <Link to="contact">Contact Us</Link>
                             </li>
                         </ul>
                     </div>

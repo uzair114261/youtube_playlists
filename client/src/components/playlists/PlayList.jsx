@@ -20,8 +20,8 @@ const PlayList = () => {
                                 <img src={AI} alt="AI" className='w-full h-full rounded-tl-2xl rounded-tr-2xl' />
                             </LazyLoad>                        </div>
                         <div className="text-left p-3">
-                            <h2 className="font-bold text-lg md:text-2xl dark:text-white">Playlist related to AI</h2>
-                            <button onClick={() => navigate('/playlist/ai')} className='bg-sky-400 md:py-1 md:px-2 flex items-center gap-3 py-1 px-2 rounded my-3 text-white dark:bg-gray-950 dark:hover:bg-white dark:hover:text-black ease-linear duration-200'>Read <InfoCircleFill/></button>
+                            <h2 className="font-bold text-lg md:text-2xl dark:text-white"> Playlist related to AI</h2>
+                            <button onClick={() => navigate('/playlist/ai')} className='bg-sky-400 md:py-1 md:px-2 flex items-center gap-3 py-1 px-2 rounded my-3 text-white dark:bg-gray-950 dark:hover:bg-white dark:hover:text-black ease-linear duration-200'> Explore <InfoCircleFill/></button>
                         </div>
                     </div>
                     <div className="block bg-gray-50 border dark:bg-gray-900 rounded-tl-2xl rounded-tr-2xl rounded-bl-xl rounded-br-xl">
@@ -30,8 +30,8 @@ const PlayList = () => {
                                 <img src={Organic} alt="organic" className='w-full h-full rounded-tl-2xl rounded-tr-2xl' />
                             </LazyLoad>                        </div>
                         <div className="text-left p-3">
-                            <h2 className="font-bold text-lg md:text-2xl dark:text-white">Organic PlayLists</h2>
-                            <button onClick={() => navigate('/playlist/organic')} className='bg-sky-400 md:py-1 md:px-2 flex items-center gap-3 py-1 px-2 rounded my-3 text-white dark:bg-gray-950 dark:hover:bg-white dark:hover:text-black ease-linear duration-200'>Read <InfoCircleFill/></button>
+                            <h2 className="font-bold text-lg md:text-2xl dark:text-white"> Without AI PlayList</h2>
+                            <button onClick={() => navigate('/playlist/organic')} className='bg-sky-400 md:py-1 md:px-2 flex items-center gap-3 py-1 px-2 rounded my-3 text-white dark:bg-gray-950 dark:hover:bg-white dark:hover:text-black ease-linear duration-200'> Explore <InfoCircleFill/></button>
                         </div>
                     </div>
                 </div>

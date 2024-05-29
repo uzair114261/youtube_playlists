@@ -3,6 +3,7 @@ from django.utils.text import slugify
 
 class Blogs(models.Model):
     title = models.CharField(max_length=255)
+    description = models.TextField()
     content = models.TextField()
     category = models.ForeignKey('Category', on_delete=models.CASCADE)
     image = models.ImageField(upload_to='blog_images/')

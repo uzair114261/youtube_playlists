@@ -6,7 +6,7 @@ const AIPlaylistView = () => {
     const [playlistData, setPlayListData] = useState()
     const { playlist_id } = useParams()
     const fetchPlayList = async () => {
-        const respone = await fetch(`${process.env.REACT_APP_BACKEND_URL}/playlist/playlist/${playlist_id}`)
+        const respone = await fetch(`${process.env.REACT_APP_BACKEND_URL}//playlist/playlist/${playlist_id}`)
         const data = await respone.json()
         setPlayListData(data)
     }
