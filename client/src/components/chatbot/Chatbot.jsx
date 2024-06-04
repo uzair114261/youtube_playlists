@@ -25,7 +25,7 @@ const Chatbot = () => {
   const [collapse, setCollapse] = useState(false);
   useMemo(() => {
     fetchQuestions();
-  }, [collapse]);
+  }, [collapse ]);
   
   const sendQuestion = (id) => {
     const getQuestionByID = currentQuestion.filter(

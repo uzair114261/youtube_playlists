@@ -8,7 +8,7 @@ const OrganicBlogContent = () => {
     const fetchBlogContent = async () => {
         try {
             setLoading(true)
-            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}blogs/category/${slug}`)
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/blogs/category/${slug}`)
             const data = await response.json()
             setBlogData(data);
         } catch (error) {
@@ -54,7 +54,7 @@ const OrganicBlogContent = () => {
                         {
                             <div className='md:px-10 md:py-20'>
                                 <div className="px-4 py-5 md:py-0 md:w-[400px] mx-auto">
-                                    <img className='rounded-lg' src={`${process.env.REACT_APP_BACKEND_URL}${blogData?.image}`} alt="" />
+                                    <img className='rounded-lg' src={`${process.env.REACT_APP_BACKEND_URL}/${blogData?.image}`} alt="" />
                                 </div>
                                 <div className='px-4 py-5'>
                                     <h2 className="text-xl font-bold py-3">{blogData?.title}</h2>

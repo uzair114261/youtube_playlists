@@ -10,28 +10,22 @@ const About = () => {
             <div className="p-5 md:w-[50%]">
               <div className="dark:text-white">
                 <div>
-                  <h1 className="font-bold">ABOUT US</h1>
-                  <h1 className=" font-medium text-3xl">
-                    Welcome to Ali Muhammad's Vlogging World!
+                  <h1 className=" font-medium text-3xl underline ">
+                  Welcome to Mastering in Vlogging 
                   </h1>
-                  <p className="text-sm text-justify">
+                  <p className="text-normal text-justify py-5 font-[400]">
                     Hi there! I'm Ali Muhammad, a passionate vlogger dedicated
                     to bringing you the best of travelling, tech, lifestyle
-                    content. With a camera in hand and a thirst for adventure, I
+                    content. <br />
+                    With a camera in hand and a thirst for adventure, I
                     set out to explore, document, and share the incredible
                     stories and experiences that the world has to offer.
                   </p>
                 </div>
                 <div className="text-justify mt-4">
-                  <h2 className="text-xl font-medium">My Journey</h2>
-                  <p className="text-sm">
-                    My vlogging journey began in [Year], fueled by a love for
-                    storytelling and a desire to connect with people from all
-                    walks of life. What started as a simple hobby quickly turned
-                    into a full-fledged passion, and I haven't looked back
-                    since. Through my YouTube channel, I've had the privilege of
-                    reaching a diverse and amazing audience, and I'm grateful
-                    for every single one of you who tunes in to watch my videos.
+                  <h2 className="text-xl font-medium py-1">Our Mission</h2>
+                  <p className=" font-[400]">
+                  At Mastering in Vlogging, our mission is to empower aspiring vloggers and content creators by providing comprehensive guidance, resources, and tools. We believe that whether you embrace cutting-edge AI technology or prefer traditional methods, you can achieve extraordinary results and build a successful YouTube channel.
                   </p>
                 </div>
               </div>
@@ -51,21 +45,40 @@ const About = () => {
           <div className="p-5 md:p-10">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
               <div className="bg-white p-2 md:p-5 rounded-lg border border-gray-300 dark:bg-gray-600 dark:text-white cursor-pointer hover:bg-gray-100 ease-linear duration-200 dark:hover:bg-white dark:hover:text-black">
-                <h1 className="text-xl md:text-3xl font-bold  text-sky-400 py-2 ">The Tech Enthusiast</h1>
+                <h1 className="text-xl md:text-3xl font-bold  text-sky-400 py-2 ">What We Offer</h1>
                 <p className="text-justify text-sm">
-                While my heart belongs to the open road and the thrill of new adventures, I am equally captivated by the ever-evolving world of technology. Whether it's unboxing the latest gadgets, reviewing cutting-edge tech, or sharing tips and tricks to make your life easier, I am always on the lookout for innovations that can enhance our journeys and everyday lives.
+                1-Expert Guides and Tutorials <br />
+                2-AI and Non-AI Approaches <br />
+                3-Tool Recommendations <br />
+                4-Success Stories and Case Studies <br />
+                5-Community Support
+
                 </p>
               </div>
               <div className="bg-white p-2 md:p-5 rounded-lg border border-gray-300 dark:bg-gray-600 dark:text-white cursor-pointer hover:bg-gray-100 ease-linear duration-200 dark:hover:bg-white dark:hover:text-black">
-              <h1 className="text-xl md:text-2xl font-bold  text-sky-400 py-2 ">Why Follow My Adventures?</h1>
+              <h1 className="text-xl md:text-2xl font-bold  text-sky-400 py-2 ">Why Choose Us</h1>
                 <p className="text-justify text-sm">
-                On my YouTube channel, you’ll find a blend of travel vlogs, tech reviews, and practical guides to help you navigate both your travels and the digital world. My goal is to inspire and inform, providing you with authentic experiences and honest insights. Whether you're a fellow traveler, a tech geek, or someone who enjoys a good story, there's something here for everyone.
+                Comprehensive Learning: We offer a balanced approach, catering to both tech-savvy creators looking to leverage AI and those who prefer hands-on, traditional methods. <br />
+                Expert Insights: Learn from industry experts and experienced vloggers who share practical tips, tricks, and insider knowledge. <br />
+                Ongoing Updates: Stay ahead of the curve with our regular updates on the latest trends, tools, and techniques in the vlogging world. <br />
                 </p>
               </div>
               <div className="bg-white p-2 md:p-5 rounded-lg border border-gray-300 dark:bg-gray-600 dark:text-white cursor-pointer hover:bg-gray-100 ease-linear duration-200 dark:hover:bg-white dark:hover:text-black">
               <h1 className="text-xl md:text-2xl font-bold  text-sky-400 py-2 ">Join the Community</h1>
                 <p className="text-justify text-sm">
-                Let's embark on this incredible journey together! Subscribe to my channel, follow me on social media, and become part of a community that celebrates curiosity, adventure, and the endless possibilities of technology. Your support and engagement mean the world to me, and I look forward to sharing many more adventures with you.
+                Ready to take your vlogging skills to the next level? 
+                Explore our resources, engage with our community, 
+                and start your journey to YouTube success today. 
+                At Mastering in Vlogging, we’re committed to helping 
+                you achieve your goals and create content that captivates and inspires. <br />
+
+                Welcome to the community. Let’s create, grow, and succeed together!
+
+
+
+
+
+
                 </p>
               </div>
             </div>

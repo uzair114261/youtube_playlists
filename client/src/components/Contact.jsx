@@ -57,7 +57,7 @@ const Contact = () => {
       formData.append("email", messageData.email)
       formData.append("phone", messageData.phone)
       formData.append("message", messageData.message)
-      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}message/new_messages`,{
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/message/new_messages`,{
         method: 'POST',
         body: formData
       })
@@ -79,28 +79,28 @@ const Contact = () => {
   };
 
   const names = [
-    "RockStar",
+    "YouTuber",
     1000,
-    "Hero",
+    "Presentator",
     1000,
-    "Acha Bacha",
+    "Developer",
     1000,
-    "Over Smart",
+    "Tourist",
     1000,
   ];
 
   return (
     <div>
       <div className="dark:bg-gray-900 md:h-[500px]">
-        <div className="container mx-auto">
+        <div className="">
           <div className="flex justify-between">
             <div className="p-5 md:w-[50%]">
               <div className="dark:text-white h-full w-full flex items-center">
-                <div>
+                <div className="px-4">
                   <h1 className="md:text-[30px]">Meet With</h1>
-                  <h1 className="md:text-[40px]">Mr. Ali Farhat</h1>
+                  <h1 className="md:text-[40px]">Owner of This Website</h1>
                   <h1 className="md:text-[35px]">
-                    The One & Only{" "}
+                    Ali Muhammad Who is{" "}
                     <span className="font-bold">
                       <TypeAnimation sequence={names} repeat={Infinity} />
                     </span>
@@ -117,14 +117,15 @@ const Contact = () => {
       <div className="bg-[#002639]">
         <div className="container mx-auto">
           <div className="py-10 md:py-20 px-5 text-white md:w-[500px]">
-            <h1 className="text-2xl font-bold dark:text-white">OUR MISSION</h1>
+            <h1 className="text-2xl font-bold dark:text-white">Introduction</h1>
             <p className="text-justify">
-              At our startup, we are committed to revolutionizing the way
-              technology enhances lives and businesses. Our mission is to craft
-              cutting-edge solutions that solve real-world problems, empower
-              individuals and organizations with transformative tools, and pave
-              the way for a future where technology serves as a catalyst for
-              progress.
+            Myself Ali Muhammad, the visionary behind Mastering in Vlogging. 
+            With over a 5 years of experience in the vlogging world, 
+            I honed my craft from the ground up, transitioning from a passionate hobbyist
+            to a renowned content creator. My journey is a testament to the power of dedication,
+            creativity, and continuous learning.
+            My Moto Is
+            "Empower Every Creator to Shine"
             </p>
           </div>
         </div>

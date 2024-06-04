@@ -11,7 +11,7 @@ const OrganicBlogs = () => {
     try {
       setLoading(true);
       const response = await fetch(
-        `${process.env.REACT_APP_BACKEND_URL}blogs/category/2`
+        `${process.env.REACT_APP_BACKEND_URL}/blogs/category/2`
       );
       const data = await response.json();
       setOrganicBlog(data);
@@ -47,25 +47,28 @@ const OrganicBlogs = () => {
       <div className="container mx-auto">
         <div className="text-center py-5">
           <h2 className="font-bold text-2xl dark:text-white text-sky-500">
-            Organic Blogs
+            Without AI Blogs
           </h2>
-          <div className="flex flex-wrap py-10 px-4 gap-3 justify-center">
+          <div className="block">
             {organicBlog.map((blog) => (
               <div
                 key={blog.id}
-                className="block bg-gray-50 dark:bg-gray-900 border rounded-tl-2xl rounded-tr-2xl rounded-bl-xl rounded-br-xl"
+                className="flex my-3 bg-gray-50 dark:bg-gray-900 border rounded-tl-2xl rounded-tr-2xl rounded-bl-xl rounded-br-xl"
               >
                 <div className="min-w-[300px] md:w-[300px] h-[200px] max-w-[500px]">
                   <img
                     src={`${process.env.REACT_APP_BACKEND_URL}${blog.image}`}
                     alt=""
-                    className="w-full h-full rounded-tl-2xl rounded-tr-2xl"
+                    className="w-full h-full rounded-tl-2xl rounded-bl-2xl"
                   />
                 </div>
                 <div className="text-left p-3">
                   <h2 className="font-bold text-lg md:text-xl dark:text-white">
-                    {blog.title.length > 20 ? blog.title.substring(0, 25) + '...' : blog.title}
+                    {blog.title}
                   </h2>
+                  <div className="py-2 text-white">
+                    <p>{blog.description}</p>
+                  </div>
                   <div className="flex items-center justify-between">
                     <button onClick={() => navigate(`/blogs/organic/${blog.slug}`)} className="bg-sky-400 py-1 px-2 flex gap-2 items-center rounded my-3 text-white dark:bg-gray-950 dark:hover:bg-white dark:hover:text-black ease-linear duration-200">
                       Read <InfoCircleFill />

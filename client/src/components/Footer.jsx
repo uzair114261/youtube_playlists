@@ -16,7 +16,7 @@ const Footer = () => {
           <ReactPlayer className='rounded-lg'
                 width='100%'
                 height='100%'
-            url="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1"
+            url="https://www.youtube.com/embed/C4trLZ4qRX4&t=30s&ab_channel=YTWithAli"
           />
           </div>
         </div>

@@ -11,7 +11,7 @@ const AIBlogs = () => {
     try {
       setLoading(true);
       const response = await fetch(
-        `${process.env.REACT_APP_BACKEND_URL}blogs/category/1`
+        `${process.env.REACT_APP_BACKEND_URL}/blogs/category/1`
       );
       const data = await response.json();
       setAIBlog(data);
